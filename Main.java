@@ -15,7 +15,7 @@ public class Main {
         System.out.println(Algorithms.Alg3(1,10));
         System.out.println(Algorithms.Alg4(0,78));
         System.out.println(Algorithms.Alg5(88));
-        System.out.println(Algorithms.Alg6(62));
+        System.out.println(Algorithms.Alg6(25));
         }
     }
 
