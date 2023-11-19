@@ -68,5 +68,47 @@ public class Algorithms
         return (int)Math.pow(2,y);
     }
 
-}
+    public static boolean Alg7(String x, String y) //Whether the second string occurs in the first.
+    {
+        return x.contains(y);
+    }
 
+    public static String Alg8(String x) //A string with the characters of the parameter reversed.
+    {
+        char z;
+        StringBuilder y = new StringBuilder(" ");
+        for (int i=0; i<x.length(); i++)
+        {
+            z= x.charAt(i);
+            y.insert(0, z);
+        }
+        return y.toString();
+    }
+
+    public static boolean Alg9(String x) //Whether the parameter is a palindrome
+    {
+        char z;
+        int b = x.length();
+        StringBuilder y = new StringBuilder(" ");
+        for (int i=0; i<b; i++)
+        {
+            z= x.charAt(i);
+            y.insert(0, z);
+        }
+        String h = y.toString();
+        return (h.contains(x));
+    }
+
+    public static int Alg10(String x, String y) //The number of occurrences of the second parameter in the first
+    {
+        int j = 0;
+        for(int i = 0; i <= x.length() - y.length(); i++)
+        {
+            if (x.startsWith(y, i))
+            {
+                j ++;
+            }
+        }
+        return j;
+    }
+}
